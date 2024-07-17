@@ -234,8 +234,8 @@ class TurtleController(Node):
                 self.temp_pointsy=self.pointsy
                 self.temp_i=self.i
                 self.i=0
-                self.pointsx = [self.pose.x+math.cos(self.target_angle)]
-                self.pointsy = [self.pose.y+math.sin(self.target_angle)]
+                self.pointsx = [self.pose.x+(0.3*math.cos(self.target_angle))]
+                self.pointsy = [self.pose.y+(0.3*math.sin(self.target_angle))]
             self.go_to_point_active= True
             if self.go_to_point_done:
                 self.obstacle_avoidance_active=False
